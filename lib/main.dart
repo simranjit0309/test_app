@@ -1,13 +1,12 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:test_app/home_screen.dart';
-import 'package:test_app/otp_screen.dart';
-import 'package:test_app/provider.dart';
-import 'package:test_app/start_screen.dart';
+import 'package:test_app/provider/provider.dart';
+import 'package:test_app/screens/home_screen.dart';
+import 'package:test_app/screens/login_screen.dart';
+import 'package:test_app/screens/otp_screen.dart';
 
-import 'login_screen.dart';
-import 'main_page.dart';
+import 'screens/main_page.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -25,6 +24,7 @@ class MainPage extends StatelessWidget {
         create: (_) => ProviderTest(),
       ),
     ], child: MaterialApp(
+      debugShowCheckedModeBanner: false,
       routes: {
         '/login_screen': (ctx) => LoginScreen(false,false),
         '/otp_screen': (ctx) =>   OTPScreen("",false),

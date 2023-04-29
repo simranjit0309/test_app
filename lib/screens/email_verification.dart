@@ -3,8 +3,8 @@ import 'dart:async';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:test_app/provider.dart';
-import 'package:test_app/register_screen.dart';
+import 'package:test_app/provider/provider.dart';
+import 'package:test_app/screens/register_screen.dart';
 
 class EmailVerificationScreen extends StatefulWidget {
   const EmailVerificationScreen({Key? key}) : super(key: key);

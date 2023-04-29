@@ -1,12 +1,13 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:test_app/email_verification.dart';
-import 'package:test_app/otp_screen.dart';
-import 'package:test_app/provider.dart';
-import 'package:test_app/register_screen.dart';
 
+import 'package:test_app/provider/provider.dart';
+
+
+import 'email_verification.dart';
 import 'home_screen.dart';
+import 'otp_screen.dart';
 
 class LoginScreen extends StatelessWidget{
   TextEditingController phoneMailEditingController = TextEditingController();

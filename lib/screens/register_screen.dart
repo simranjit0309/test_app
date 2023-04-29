@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:test_app/provider.dart';
+import 'package:test_app/provider/provider.dart';
 
 import 'home_screen.dart';
 
@@ -70,7 +70,7 @@ class RegisterScreen extends StatelessWidget {
               const SizedBox(height: 15.0,),
               InkWell(
                 onTap: (){
-                  if(emailOrNumber.length>10 && phoneOrEmail.text.length>10 && fisrtName.text.length>5 && lastName.text.length>5) {
+                  if(emailOrNumber.length>=10 && phoneOrEmail.text.length>=10 && fisrtName.text.length>5 && lastName.text.length>5) {
                     Provider.of<ProviderTest>(context, listen: false).
                     userSetup(isPhoneLogin ? emailOrNumber : phoneOrEmail.text,
                         isPhoneLogin ? phoneOrEmail.text : emailOrNumber,

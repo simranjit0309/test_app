@@ -1,7 +1,8 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:test_app/home_screen.dart';
-import 'package:test_app/start_screen.dart';
+import 'package:test_app/screens/start_screen.dart';
+
+import 'home_screen.dart';
 
 
 class MainScreen extends StatelessWidget{
